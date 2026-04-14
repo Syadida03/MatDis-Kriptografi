@@ -1,0 +1,56 @@
+body {
+    background: #eef2f3;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+h2 { color: #333; margin-bottom: 0.5rem; text-align: center; }
+p { color: #666; font-size: 0.9rem; text-align: center; margin-bottom: 1.5rem; }
+
+.input-group { margin-bottom: 1rem; }
+label { font-weight: bold; font-size: 0.85rem; display: block; margin-bottom: 5px; }
+
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.actions { display: flex; gap: 10px; margin-top: 1rem; }
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-enc { background: #4A90E2; color: white; }
+.btn-dec { background: #50C878; color: white; }
+button:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.result-area {
+    margin-top: 1.5rem;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #4A90E2;
+}
+
+#resultText { word-break: break-all; color: #444; min-height: 20px; }
